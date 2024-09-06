@@ -3,7 +3,13 @@
 }
 
 body{
-    min-height: 100%;
+    min-height: 100lvh;
     background-color: #000;
     color: var(--offwhite);
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/img/P1280562.jpg');
+    background-position: 60% 0%;
 }
