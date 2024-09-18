@@ -22,13 +22,13 @@ figcaption {
     max-width: 65ch;
 }
 
-header,
+/* header,
 footer,
 main,
 section,
 article {
     container-type: inline-size;
-}
+} */
 
 
 img{
