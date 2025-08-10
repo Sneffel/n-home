@@ -1,13 +1,61 @@
-:root{
-    --offwhite: hsl(0, 16%, 94%);
+:root {
+    --f-family: "Moderustic", serif;
 }
 
-body{
+@font-face {
+    font-display: swap;
+    font-family: 'Cinzel Decorative';
+    font-style: normal;
+    font-weight: 400;
+    src: var(--font-title-url-regular) format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cinzel Decorative';
+    font-style: normal;
+    font-weight: 700;
+    src: var(--font-title-url-700) format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cinzel Decorative';
+    font-style: normal;
+    font-weight: 900;
+    src: var(--font-title-url-900) format('woff2');
+}
+
+body {
     min-height: 100lvh;
     background-color: #000;
     color: var(--offwhite);
+
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.hero {
+    height: 100lvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../assets/img/P1280562.jpg');
+    background-image: var(--hero-img, url('/assets/img/P1280562.jpg'));
     background-position: 60% 0%;
+
+    & p {
+        filter: drop-shadow(1px 1px 1px #000);
+        font-family: var(--f-family);
+    }
+}
+
+h1 {
+    filter: drop-shadow(2px 2px 2px #000);
+    font-family: 'Cinzel';
+    font-weight: 900;
 }
